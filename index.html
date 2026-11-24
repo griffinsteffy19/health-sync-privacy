@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HealthSync support</title>
+<meta name="robots" content="index">
+<style>
+  :root { --bg: #f6f8f8; --fg: #10201f; --muted: #5c6b6a; --accent: #08857d; --card: #fff; --line: #dfe6e5; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #031e2b; --fg: #e8f3f2; --muted: #9db3b1; --accent: #40e3cf; --card: #06303a; --line: #0f4450; } }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 17px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+  main { max-width: 680px; margin: 0 auto; padding: 32px 16px 64px; }
+  h1 { font-size: 2rem; line-height: 1.2; margin: .2em 0; }
+  h2 { font-size: 1.15rem; margin: 2em 0 .4em; }
+  a { color: var(--accent); }
+  .muted { color: var(--muted); }
+  .short { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 14px 16px; }
+  ul { padding-left: 1.2em; } li { margin: .35em 0; }
+  nav { display: flex; gap: 1em; font-size: .95rem; margin-bottom: 1.5em; }
+  footer { margin-top: 3em; font-size: .9rem; }
+</style>
+</head>
+<body><main>
+<nav><a href="/">HealthSync</a><a href="/privacy/">Privacy</a></nav>
+<h1>HealthSync</h1>
+<p class="muted">Send your Apple Health workouts, with their routes and heart rate, to servers you choose.</p>
+<p class="short">HealthSync reads workouts from Apple Health on your iPhone and sends them to the servers you connect,
+  such as your running club's site or your own training log. It has no account, no ads and no tracking.
+  <a href="/privacy/">Privacy policy</a>.</p>
+
+<h2>Getting started</h2>
+<ol>
+  <li>Open HealthSync and allow it to read your workouts from Apple Health.</li>
+  <li>Add a server: scan the setup code from the server's website (for example its phone-sync page), or enter its
+    address. A setup code is for one phone and expires after a few minutes; ask the site for a new one if it does.</li>
+  <li>Choose what that server gets, from which date, and which workout types. HealthSync sends them in the
+    background from then on.</li>
+</ol>
+
+<h2>Common questions</h2>
+<ul>
+  <li><strong>A workout didn't arrive.</strong> Check that HealthSync may read workouts and routes (Health app → your
+    profile → Apps → HealthSync), and that the server is set to receive that workout's type and date. Opening the
+    app sends anything waiting.</li>
+  <li><strong>How quickly do workouts send?</strong> iOS decides when apps may run in the background, so it's usually
+    within minutes of a workout reaching Apple Health, sometimes longer. Opening HealthSync sends right away.</li>
+  <li><strong>A server stopped accepting workouts.</strong> Its key may have been removed on the server's side. Get a
+    new setup code from the server's website and scan it again.</li>
+  <li><strong>Can I keep a copy myself?</strong> Yes: export workouts to Files → On My iPhone → HealthSync.</li>
+  <li><strong>Who sees my workouts?</strong> Only the servers you connect. Each server's own privacy policy covers what
+    it shows to others.</li>
+</ul>
+
+<h2>Contact</h2>
+<p>Questions or problems: <a href="mailto:healthsyncexport@gmail.com">healthsyncexport@gmail.com</a>. In the app you can also prepare a problem
+  report of recent sync activity (server addresses and keys removed) and send it along.</p>
+<footer class="muted">HealthSync · <a href="/privacy/">Privacy policy</a> · <a href="mailto:healthsyncexport@gmail.com">healthsyncexport@gmail.com</a></footer>
+</main></body>
+</html>
